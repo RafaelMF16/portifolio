@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --cor-background-rodape: #3E00FF;
+    --cor-borda-link: #3E00FF;
+    --cor-background: Black;
+    --cor-texto: #B5FFD9;
+    --cor-destaque: #AE00FB;
+    --cor-background-hover: rgb(138, 125, 214);
+    --cor-texto-rodape: black;
+}
+body{
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+    font-family: 'Kanit', sans-serif;
+}
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 3%;
+}
+.cabecalho__menu__link{
+    text-decoration: none;
+    color: var(--cor-destaque);
+    
+}
+strong{
+    color: var(--cor-destaque);
+}
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15% 14%;
+    gap: 82px
+}
+.apresentacao__conteudo{
+    width: 50%;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.1rem;
+}
+.apresentacao__conteudo__links{
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.apresentacao__conteudo__links__navegacao{
+    gap: 10px;
+    border: 1px solid var(--cor-borda-link);
+    font-family: 'Kanit', sans-serif;
+    border-radius: 8px;
+    color: var(--cor-texto);
+    width: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 2%;
+}
+.apresentacao__conteudo__links__navegacao__img{
+    width: 28px;
+}
+.apresentacao__conteudo__links__link:hover{
+    background-color: var(--cor-background-hover);
+}
+img {
+    width: 50%;
+    border-radius: 15px;
+}
+.rodape{
+    background-color: var(--cor-background-rodape);
+    text-align: center;
+    color: var(--cor-texto-rodape);
+    font-size: 1.2rem;
+}
+
+@media(max-width: 900px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
